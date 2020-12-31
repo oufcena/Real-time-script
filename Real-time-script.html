@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<pre contenteditable="true" spellcheck="false" style="outline:none" 
+oninput="
+var script = document.createElement('script');
+script.textContent = this.textContent;
+
+document.body.appendChild(script);
+document.body.removeChild(script);
+">alert('Hello World!');</pre>
+
+</body>
+</html>
